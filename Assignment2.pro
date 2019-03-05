@@ -26,13 +26,13 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+    grade_calculator.cpp
 
 HEADERS += \
-        mainwindow.h
+    grade_calculator.h
 
 FORMS += \
-        mainwindow.ui
+    grade_calculator.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

@@ -40,16 +40,16 @@
      <item>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <layout class="QHBoxLayout" name="hw1">
          <item>
-          <widget class="QLabel" name="label">
+          <widget class="QLabel" name="hw1label">
            <property name="text">
             <string>HW1</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QSlider" name="horizontalSlider">
+          <widget class="QSlider" name="hw1slider">
            <property name="maximum">
             <number>100</number>
            </property>
@@ -59,7 +59,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QSpinBox" name="spinBox">
+          <widget class="QSpinBox" name="hw1spinbox">
            <property name="maximum">
             <number>100</number>
            </property>
@@ -68,7 +68,7 @@
         </layout>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <layout class="QHBoxLayout" name="hw2">
          <item>
           <widget class="QLabel" name="label_3">
            <property name="text">
@@ -96,7 +96,7 @@
         </layout>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout">
+        <layout class="QHBoxLayout" name="hw3">
          <item>
           <widget class="QLabel" name="label_4">
            <property name="text">
@@ -124,7 +124,7 @@
         </layout>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <layout class="QHBoxLayout" name="hw4">
          <item>
           <widget class="QLabel" name="label_5">
            <property name="text">
@@ -270,8 +270,8 @@
    <widget class="QWidget" name="verticalLayoutWidget_2">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>10</y>
+      <x>300</x>
+      <y>20</y>
       <width>160</width>
       <height>81</height>
      </rect>
@@ -286,21 +286,28 @@
      </item>
      <item>
       <widget class="QSlider" name="horizontalSlider_11">
+       <property name="maximum">
+        <number>100</number>
+       </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QSpinBox" name="spinBox_11"/>
+      <widget class="QSpinBox" name="spinBox_11">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
    <widget class="QWidget" name="verticalLayoutWidget_3">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>90</y>
+      <x>300</x>
+      <y>100</y>
       <width>160</width>
       <height>81</height>
      </rect>
@@ -315,20 +322,27 @@
      </item>
      <item>
       <widget class="QSlider" name="horizontalSlider_10">
+       <property name="maximum">
+        <number>100</number>
+       </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QSpinBox" name="spinBox_10"/>
+      <widget class="QSpinBox" name="spinBox_10">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>300</x>
       <y>180</y>
       <width>160</width>
       <height>81</height>
@@ -366,6 +380,32 @@
       </widget>
      </item>
     </layout>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>300</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Overall Score</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>300</y>
+      <width>59</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -488,9 +528,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>horizontalSlider</sender>
+   <sender>hw1slider</sender>
    <signal>valueChanged(int)</signal>
-   <receiver>spinBox</receiver>
+   <receiver>hw1spinbox</receiver>
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
@@ -504,9 +544,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>spinBox</sender>
+   <sender>hw1spinbox</sender>
    <signal>valueChanged(int)</signal>
-   <receiver>horizontalSlider</receiver>
+   <receiver>hw1slider</receiver>
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
@@ -658,8 +698,8 @@
      <y>82</y>
     </hint>
     <hint type="destinationlabel">
-     <x>304</x>
-     <y>111</y>
+     <x>367</x>
+     <y>134</y>
     </hint>
    </hints>
   </connection>
@@ -670,8 +710,8 @@
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>351</x>
-     <y>110</y>
+     <x>414</x>
+     <y>134</y>
     </hint>
     <hint type="destinationlabel">
      <x>351</x>
@@ -686,12 +726,12 @@
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>268</x>
-     <y>157</y>
+     <x>328</x>
+     <y>181</y>
     </hint>
     <hint type="destinationlabel">
-     <x>273</x>
-     <y>197</y>
+     <x>336</x>
+     <y>214</y>
     </hint>
    </hints>
   </connection>
@@ -702,8 +742,8 @@
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>325</x>
-     <y>193</y>
+     <x>388</x>
+     <y>214</y>
     </hint>
     <hint type="destinationlabel">
      <x>326</x>

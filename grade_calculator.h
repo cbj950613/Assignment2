@@ -7,7 +7,7 @@ namespace Ui {
 class grade_calculator;
 }
 
-class grade_calculator : public QMainWindow
+class grade_calculator :  public QMainWindow
 {
     Q_OBJECT
 
@@ -22,4 +22,4 @@ private:
     Ui::grade_calculator *ui;
 };
 
-#endif // MAINWINDOW_H
+#endif // GRADE_CALCULATOR_H

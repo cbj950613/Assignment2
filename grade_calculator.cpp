@@ -1,5 +1,5 @@
 #include "grade_calculator.h"
-#include "ui_mainwindow.h"
+#include "ui_grade_calculator.h"
 
 grade_calculator::grade_calculator(QWidget *parent) :
     QMainWindow(parent),
@@ -8,12 +8,12 @@ grade_calculator::grade_calculator(QWidget *parent) :
     ui->setupUi(this);
 }
 
-MainWindow::~MainWindow()
+grade_calculator::~grade_calculator()
 {
     delete ui;
 }
 
-void MainWindow::on_hw1slider_valueChanged(int value)
+void grade_calculator::on_hw1slider_valueChanged(int value)
 {
 
 }
